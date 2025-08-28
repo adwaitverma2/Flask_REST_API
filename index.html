@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Static Files Example</title>
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to Flask</h1>
+    <p>This page uses static CSS and an image.</p>
+
+    <!-- Display an image -->
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
